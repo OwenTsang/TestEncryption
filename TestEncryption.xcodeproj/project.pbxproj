@@ -873,6 +873,7 @@
 		21B391D417AE58A400A4641E /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		21B391D617AE58A400A4641E /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		21B391D717AE58A400A4641E /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		21B391DF17AE5A0000A4641E /* OBEncrytionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBEncrytionUtil.h; path = Classes/OBEncrytionUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2093,6 +2094,7 @@
 		21B391D217AE58A400A4641E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				21B391DF17AE5A0000A4641E /* OBEncrytionUtil.h */,
 				21B391D317AE58A400A4641E /* AppDelegate.h */,
 				21B391D417AE58A400A4641E /* AppDelegate.cpp */,
 				21B391D617AE58A400A4641E /* HelloWorldScene.h */,

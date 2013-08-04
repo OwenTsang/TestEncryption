@@ -17,6 +17,8 @@ public:
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(HelloWorld);
+    
+    void testEncrytion();
 };
 
 #endif // __HELLOWORLD_SCENE_H__

@@ -1,6 +1,8 @@
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
 
+#include "OBEncrytionUtil.h"
+
 using namespace cocos2d;
 using namespace CocosDenshion;
 
@@ -71,8 +73,33 @@ bool HelloWorld::init()
     // add the sprite as a child to this layer
     this->addChild(pSprite, 0);
     
+    testEncrytion();
+    
     return true;
 }
+
+
+void HelloWorld::testEncrytion()
+{
+    const char* serect = "cocos2dxReallyHelpUs";
+    CCUserDefault* userDefault = CCUserDefault::sharedUserDefault();
+    
+    CCLog("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    CCLog("test encrypting String...");
+    
+    UserEncrytionUtil::setStringForKey(userDefault, "COUNTRY", "China",serect);
+    std::string country = UserEncrytionUtil::getStringForKey(userDefault, "COUNTRY",serect);
+    
+    CCLog("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    CCLog("test encrypting Integer...");
+    
+    UserEncrytionUtil::setIntegerForKey(userDefault, "CODE", 86,serect);
+    int code = UserEncrytionUtil::getIntegerForKey(userDefault, "CODE",serect);
+    
+    CCLOG("now we know : country = %s , code = %d",country.c_str(), code);
+}
+
+
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)
 {
